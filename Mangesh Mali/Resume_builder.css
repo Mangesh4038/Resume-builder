@@ -1,0 +1,36 @@
+.container0 {
+    display: block;
+}
+
+.container01 {
+    height: auto;
+}
+
+.container02 {
+    display: flex;
+    height: auto;
+    text-align: center;
+}
+
+.sub {
+    height: auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 380px;
+}
+
+.container03 {
+    height: auto;
+    text-align: center;
+}
+
+#cv-form
+{
+    display: none;
+}
