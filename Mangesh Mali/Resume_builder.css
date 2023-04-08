@@ -16,7 +16,12 @@
     height: auto;
     width: 50%;
 }
+#file
+{
+    width: 383px;
+    margin-left: 145px;
 
+}
 h1 {
     text-align: center;
 }
@@ -32,5 +37,28 @@ input {
 
 #cv-form
 {
+    /* display: none; */
+}
+#cv-template
+{
     display: none;
+}
+
+
+/* sample templates  */
+.myimg
+{
+    border: black solid 1px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+}
+.background
+{
+    background-color: aqua;
+}
+.row
+{
+    display: flex;
 }
