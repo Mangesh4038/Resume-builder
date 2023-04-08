@@ -17,26 +17,31 @@
         <div class="container01">
             <h1>Resume Builder</h1>
         </div>
-        <div class="container02">
+        <div class="container02 mt-5">
             <div class="sub">
                 <h3>Personal Information</h3>
                 <form name="resume">
-                    Enter Your Name : <br><input type="text" name="t1" id="name" placeholder="Enter here"> <br><br>
-                    Enter Your Address : <br><textarea name="t2" id="add" rows="3" cols="50"
+                    Enter Your Name : <br><input type="text" name="t1" id="name1" placeholder="Enter here"> <br><br>
+                    Enter Your Address : <br><textarea name="t2" id="addressfield" rows="3" cols="50"
                         placeholder="Enter here"></textarea><br><br>
-                    Enter your contact : <br><input type="text" name="t3" placeholder="Enter here"> <br><br>
+                    Enter your contact : <br><input type="text" name="t3" id="contactfield" placeholder="Enter here"> <br><br>
+                    <div class="form-group " id="file">
+                        <label for="">Select Your profile photo : </label>
+                        <input id="img-field" type="file" class="form-control"/>
+                    </div>
+                    <br>
                     <b>Important Links : </b><br>
                     <br>
-                    <!-- Facebook : <br><input type="text" placeholder="Enter here"><br><br> -->
-                    instagram : <br><input type="text" placeholder="Enter here"><br><br>
-                    Linkedin : <br><input type="text" placeholder="Enter here"><br><br>
+                    Facebook : <br><input type="text" id="fbfield" placeholder="Enter here"><br><br>
+                    instagram : <br><input type="text" id="instafield" placeholder="Enter here"><br><br>
+                    Linkedin : <br><input type="text" id="linkedfield" placeholder="Enter here"><br><br>
                 </form>
             </div>
             <div class="sub">
                 <h3>Professional Information</h3>
                 <div class="form-group mt-2">
                     <label for="">Objective</label>
-                    <textarea placeholder="Enter here" class="form-control" rows="3"></textarea><br>
+                    <textarea placeholder="Enter here" id="objectfield" class="form-control" rows="3"></textarea><br>
                 </div>
                 <div class="form-group mt-2" id="we">
                     <label for="">Work Experience</label>
@@ -57,17 +62,67 @@
             </div>
         </div>
         <div class="container03 text-center mt-3">
-            <button class="btn btn-primary btn-lg">generate CV</button>
+            <button class="btn btn-primary btn-lg" onclick="GenerateCV()">generate CV</button>
         </div>
     </div>
 
-    <div class="container" id="cv-template">
-        <div class="rwo">
-            <div class="col-md-4">
-
+    <div class="container1" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-4 background">
+                <img src="C:/Users/mangesh/Downloads/adhar.jpeg" alt="" id="imgtemplate" class="img-fluid myimg">
+                <div class="container11 ">
+                    <p id="namet1">Mangesh Ishwara Mali</p>
+                    <p id="contactt1">+91 7887347055</p>
+                    <p id="addresst">Karadaga road shahunagar rendal</p>
+                    <hr>
+                    <p><a href="#1" id="fbt">https://www.facebook.com/MangeshMali4038</a></p>
+                    <p><a href="#1" id="instat">https://www.instagram.com/MangeshMali4038</a></p>
+                    <p><a href="#1" id="linkedint">https://www.linkedin.com/MangeshMali4038</a></p>
+                </div>
             </div>
-            <div class="col-md-8">
-                
+            <div class="col-md-8 py-4">
+                <h1 id="namet2" class="text-center" style="font-weight: 980;">Mangesh Ishwara Mali</h1>
+                <div class="mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectivet">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis consequuntur, nihil harum et
+                            reprehenderit est sed quia, delectus quisquam officia exercitationem voluptatem accusamus? Sint
+                            harum, dolorem non consequuntur iure sed!
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="wet">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="card-header background">
+                        <h3>Acadamic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="eqt">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nisi?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container12 mt-4 text-center">
+                    <button onclick="PrintCV()" class="btn background">Print CV</button>
+                </div>
             </div>
         </div>
     </div>
